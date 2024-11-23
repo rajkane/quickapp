@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/bin/llvm-objdump-14")
+  set(CMAKE_OBJDUMP "/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -57,7 +57,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          OLD_RPATH "/home/daniel/Qt/6.8.0/gcc_64/lib:"
          NEW_RPATH "\$ORIGIN:\$ORIGIN/../lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/bin/llvm-strip-14" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/appQuickApp")
+      execute_process(COMMAND "/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/appQuickApp")
     endif()
   endif()
 endif()

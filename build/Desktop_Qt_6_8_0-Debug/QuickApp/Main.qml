@@ -1,6 +1,5 @@
 import QtQuick
 import QtQuick.Controls
-import QtQuick.Layouts
 
 
 Window {
@@ -10,7 +9,7 @@ Window {
     title: ("Quick Application")
 
     StackView {
-        id: stack
+        id: stacker
         anchors.fill: parent
         initialItem: "PageOne.qml"
     }

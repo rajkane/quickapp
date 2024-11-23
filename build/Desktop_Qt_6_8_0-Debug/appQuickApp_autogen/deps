@@ -826,8 +826,7 @@ appQuickApp_autogen/timestamp: \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CheckIncludeFileCXX.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Compiler/Clang-CXX.cmake \
-	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Compiler/Clang.cmake \
+	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Compiler/GNU.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/FeatureSummary.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/FindOpenGL.cmake \
@@ -841,7 +840,6 @@ appQuickApp_autogen/timestamp: \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/MacroAddFileDependencies.cmake \
-	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Platform/Linux-Clang-CXX.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake \
 	/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake \

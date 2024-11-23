@@ -21,7 +21,7 @@ Rectangle {
             id: btn_one
             text: "Go to Page One"
             onClicked: {
-                stack.push("PageOne.qml")
+                stacker.push("PageOne.qml")
             }
         }
 
@@ -29,7 +29,7 @@ Rectangle {
             id: btn_three
             text: "Go to Page Three"
             onClicked: {
-                stack.push("PageThree.qml")
+                stacker.push("PageThree.qml")
             }
         }
     }

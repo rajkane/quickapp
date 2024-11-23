@@ -6,18 +6,18 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 190,
+                        "durationMicroseconds": 137,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 10
+                        "line": 9
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 141,
+                        "durationMicroseconds": 87,
                         "errorMessage": "",
                         "functionName": "text",
-                        "line": 16
+                        "line": 15
                     },
                     {
                         "codegenSuccessfull": false,
@@ -25,7 +25,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 23
+                        "line": 22
                     },
                     {
                         "codegenSuccessfull": false,
@@ -33,7 +33,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 31
+                        "line": 30
                     }
                 ],
                 "filepath": "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/PageOne.qml"

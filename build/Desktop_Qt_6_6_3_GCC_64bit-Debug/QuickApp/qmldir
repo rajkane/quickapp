@@ -1,6 +1,0 @@
-module QuickApp
-typeinfo appQuickApp.qmltypes
-prefer :/qt/qml/QuickApp/
-Main 1.0 Main.qml
-Second 1.0 Second.qml
-

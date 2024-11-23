@@ -17,7 +17,7 @@ events:
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /bin/clang++-14 
+      Compiler: /bin/g++ 
       Build flags: -DQT_QML_DEBUG
       Id flags:  
       
@@ -27,7 +27,7 @@ events:
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
-      The CXX compiler identification is Clang, found in:
+      The CXX compiler identification is GNU, found in:
         /home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/3.29.3/CompilerIdCXX/a.out
       
   -
@@ -39,10 +39,9 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-oFUSBy"
-      binary: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-oFUSBy"
+      source: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-LPNWt6"
+      binary: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-LPNWt6"
     cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -51,44 +50,69 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-oFUSBy'
+        Change Dir: '/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-LPNWt6'
         
-        Run Build Command(s): /home/daniel/Qt/Tools/Ninja/ninja -v cmTC_d961f
-        [1/2] /bin/clang++-14   -DQT_QML_DEBUG  -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -c /home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
-        Ubuntu clang version 14.0.0-1ubuntu1.1
-        Target: x86_64-pc-linux-gnu
+        Run Build Command(s): /home/daniel/Qt/Tools/Ninja/ninja -v cmTC_a4165
+        [1/2] /bin/g++   -DQT_QML_DEBUG  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o -c /home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/bin/g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
         Thread model: posix
-        InstalledDir: /bin
-        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11
-        Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11
-        Candidate multilib: .;@m64
-        Selected multilib: .;@m64
-         (in-process)
-         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-oFUSBy -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D QT_QML_DEBUG -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-oFUSBy -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
-        clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
-        ignoring nonexistent directory "/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
-        ignoring nonexistent directory "/include"
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a4165.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D QT_QML_DEBUG /home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a4165.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc7LdnVg.s
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
-         /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
-         /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
-         /usr/lib/llvm-14/lib/clang/14.0.0/include
+         /usr/include/c++/11
+         /usr/include/x86_64-linux-gnu/c++/11
+         /usr/include/c++/11/backward
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
          /usr/local/include
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        [2/2] : && /bin/clang++-14 -DQT_QML_DEBUG -v -Wl,-v CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d961f   && :
-        Ubuntu clang version 14.0.0-1ubuntu1.1
-        Target: x86_64-pc-linux-gnu
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a4165.dir/'
+         as -v --64 -o CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7LdnVg.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /bin/g++ -DQT_QML_DEBUG -v -Wl,-v CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a4165   && :
+        Using built-in specs.
+        COLLECT_GCC=/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
         Thread model: posix
-        InstalledDir: /bin
-        Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11
-        Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11
-        Candidate multilib: .;@m64
-        Selected multilib: .;@m64
-         "/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d961f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/bin/../lib/gcc/x86_64-linux-gnu/11 -L/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_a4165' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a4165.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgEaLOX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a4165 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 11.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgEaLOX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a4165 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.38
+        COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_a4165' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a4165.'
         
       exitCode: 0
   -
@@ -101,22 +125,22 @@ events:
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11]
-          add: [/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11]
-          add: [/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward]
-          add: [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+          add: [/usr/include/c++/11]
+          add: [/usr/include/x86_64-linux-gnu/c++/11]
+          add: [/usr/include/c++/11/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
           add: [/usr/local/include]
           add: [/usr/include/x86_64-linux-gnu]
           add: [/usr/include]
         end of search list found
-        collapse include dir [/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11] ==> [/include/c++/11]
-        collapse include dir [/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11] ==> [/include/x86_64-linux-gnu/c++/11]
-        collapse include dir [/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward] ==> [/include/c++/11/backward]
-        collapse include dir [/usr/lib/llvm-14/lib/clang/14.0.0/include] ==> [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+        collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+        collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
         collapse include dir [/usr/local/include] ==> [/usr/local/include]
         collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
         collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/include/c++/11;/include/x86_64-linux-gnu/c++/11;/include/c++/11/backward;/usr/lib/llvm-14/lib/clang/14.0.0/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+        implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
       
       
   -
@@ -129,73 +153,101 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-oFUSBy']
+        ignore line: [Change Dir: '/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-LPNWt6']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/daniel/Qt/Tools/Ninja/ninja -v cmTC_d961f]
-        ignore line: [[1/2] /bin/clang++-14   -DQT_QML_DEBUG  -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -c /home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
-        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Run Build Command(s): /home/daniel/Qt/Tools/Ninja/ninja -v cmTC_a4165]
+        ignore line: [[1/2] /bin/g++   -DQT_QML_DEBUG  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o -c /home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /bin]
-        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11]
-        ignore line: [Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11]
-        ignore line: [Candidate multilib: .]
-        ignore line: [@m64]
-        ignore line: [Selected multilib: .]
-        ignore line: [@m64]
-        ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-oFUSBy -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D QT_QML_DEBUG -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-oFUSBy -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
-        ignore line: [ignoring nonexistent directory "/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
-        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a4165.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D QT_QML_DEBUG /home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a4165.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc7LdnVg.s]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11]
-        ignore line: [ /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11]
-        ignore line: [ /bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward]
-        ignore line: [ /usr/lib/llvm-14/lib/clang/14.0.0/include]
+        ignore line: [ /usr/include/c++/11]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
+        ignore line: [ /usr/include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /bin/clang++-14 -DQT_QML_DEBUG -v -Wl -v CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d961f   && :]
-        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
-        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a4165.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7LdnVg.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-D' 'QT_QML_DEBUG' '-v' '-o' 'CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /bin/g++ -DQT_QML_DEBUG -v -Wl -v CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a4165   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /bin]
-        ignore line: [Found candidate GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11]
-        ignore line: [Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/11]
-        ignore line: [Candidate multilib: .]
-        ignore line: [@m64]
-        ignore line: [Selected multilib: .]
-        ignore line: [@m64]
-        link line: [ "/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d961f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/bin/../lib/gcc/x86_64-linux-gnu/11 -L/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
-          arg [/bin/ld] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'QT_QML_DEBUG' '-v' '-o' 'cmTC_a4165' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a4165.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgEaLOX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a4165 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccgEaLOX.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [--build-id] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
           arg [-m] ==> ignore
           arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_d961f] ==> ignore
-          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
-          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
-          arg [/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
-          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/11] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/11]
-          arg [-L/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> dir [/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64]
+          arg [cmTC_a4165] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
           arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-          arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
-          arg [-L/lib] ==> dir [/lib]
-          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_d961f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -203,23 +255,25 @@ events:
           arg [-lc] ==> lib [c]
           arg [-lgcc_s] ==> lib [gcc_s]
           arg [-lgcc] ==> lib [gcc]
-          arg [/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o]
-          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
-        linker tool for 'CXX': /bin/ld
-        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> [/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
-        collapse obj [/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> [/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
-        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/11] ==> [/lib/gcc/x86_64-linux-gnu/11]
-        collapse library dir [/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> [/lib64]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 11.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgEaLOX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a4165 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a4165.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
         collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/lib/../lib] ==> [/lib]
         collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-        collapse library dir [/usr/lib/llvm-14/bin/../lib] ==> [/usr/lib/llvm-14/lib]
-        collapse library dir [/lib] ==> [/lib]
-        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
         implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/lib/gcc/x86_64-linux-gnu/11;/lib64;/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib64;/usr/lib/llvm-14/lib;/lib;/usr/lib]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
         implicit fwks: []
       
       
@@ -231,7 +285,7 @@ events:
       - "/home/daniel/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      Running the CXX compiler's linker: "/bin/ld" "-v"
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Ubuntu) 2.38
   -
     kind: "try_compile-v1"
@@ -248,10 +302,9 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-tOMcIb"
-      binary: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-tOMcIb"
+      source: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-6wrlqu"
+      binary: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-6wrlqu"
     cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -260,11 +313,11 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-tOMcIb'
+        Change Dir: '/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-6wrlqu'
         
-        Run Build Command(s): /home/daniel/Qt/Tools/Ninja/ninja -v cmTC_f93c5
-        [1/2] /bin/clang++-14 -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG  -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_f93c5.dir/src.cxx.o -MF CMakeFiles/cmTC_f93c5.dir/src.cxx.o.d -o CMakeFiles/cmTC_f93c5.dir/src.cxx.o -c /home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-tOMcIb/src.cxx
-        [2/2] : && /bin/clang++-14 -DQT_QML_DEBUG  CMakeFiles/cmTC_f93c5.dir/src.cxx.o -o cmTC_f93c5   && :
+        Run Build Command(s): /home/daniel/Qt/Tools/Ninja/ninja -v cmTC_b9536
+        [1/2] /bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG  -fdiagnostics-color=always -o CMakeFiles/cmTC_b9536.dir/src.cxx.o -c /home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-6wrlqu/src.cxx
+        [2/2] : && /bin/g++ -DQT_QML_DEBUG  CMakeFiles/cmTC_b9536.dir/src.cxx.o -o cmTC_b9536   && :
         
       exitCode: 0
   -
@@ -286,10 +339,9 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-MuN49j"
-      binary: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-MuN49j"
+      source: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-S5oa3J"
+      binary: "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-S5oa3J"
     cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -298,11 +350,11 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-MuN49j'
+        Change Dir: '/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-S5oa3J'
         
-        Run Build Command(s): /home/daniel/Qt/Tools/Ninja/ninja -v cmTC_6bf92
-        [1/2] /bin/clang++-14 -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_6bf92.dir/src.cxx.o -MF CMakeFiles/cmTC_6bf92.dir/src.cxx.o.d -o CMakeFiles/cmTC_6bf92.dir/src.cxx.o -c /home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-MuN49j/src.cxx
-        [2/2] : && /bin/clang++-14 -DQT_QML_DEBUG  CMakeFiles/cmTC_6bf92.dir/src.cxx.o -o cmTC_6bf92   && :
+        Run Build Command(s): /home/daniel/Qt/Tools/Ninja/ninja -v cmTC_ab7a7
+        [1/2] /bin/g++ -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -fdiagnostics-color=always -o CMakeFiles/cmTC_ab7a7.dir/src.cxx.o -c /home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/CMakeScratch/TryCompile-S5oa3J/src.cxx
+        [2/2] : && /bin/g++ -DQT_QML_DEBUG  CMakeFiles/cmTC_ab7a7.dir/src.cxx.o -o cmTC_ab7a7   && :
         
       exitCode: 0
 ...

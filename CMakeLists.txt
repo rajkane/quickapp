@@ -20,7 +20,8 @@ qt_add_qml_module(appQuickApp
         QML_FILES PageOne.qml
         QML_FILES PageTwo.qml
         QML_FILES PageThree.qml
-
+        RESOURCES README.md
+        RESOURCES LICENSE
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

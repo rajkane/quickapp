@@ -4,6 +4,8 @@
     <file alias="PageOne.qml">/home/daniel/QtProjects/QuickApp/PageOne.qml</file>
     <file alias="PageTwo.qml">/home/daniel/QtProjects/QuickApp/PageTwo.qml</file>
     <file alias="PageThree.qml">/home/daniel/QtProjects/QuickApp/PageThree.qml</file>
+    <file alias="README.md">/home/daniel/QtProjects/QuickApp/README.md</file>
+    <file alias="LICENSE">/home/daniel/QtProjects/QuickApp/LICENSE</file>
   </qresource>
 </RCC>
 

@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/QuickApp/">
-    <file alias="Main.qml">/home/daniel/QtProjects/QuickApp/Main.qml</file>
-    <file alias="Second.qml">/home/daniel/QtProjects/QuickApp/Second.qml</file>
-  </qresource>
-</RCC>
-

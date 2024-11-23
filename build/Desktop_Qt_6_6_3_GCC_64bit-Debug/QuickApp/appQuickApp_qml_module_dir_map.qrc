@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/qt/qml/QuickApp">/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug/QuickApp</file>
-
-  </qresource>
-</RCC>

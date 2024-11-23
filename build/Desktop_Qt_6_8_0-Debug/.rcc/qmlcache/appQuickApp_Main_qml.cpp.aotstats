@@ -6,10 +6,10 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "title",
-                        "line": 10
+                        "line": 9
                     },
                     {
                         "codegenSuccessfull": false,
@@ -17,7 +17,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on fill.",
                         "functionName": "fill",
-                        "line": 14
+                        "line": 13
                     }
                 ],
                 "filepath": "/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/Main.qml"
