@@ -1,0 +1,13 @@
+--bare
+-I
+/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug
+-I
+/home/daniel/Qt/6.6.3/gcc_64/./qml
+--resource
+/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug/.rcc/qmake_QuickApp.qrc
+--resource
+/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug/.rcc/appQuickApp_raw_qml_0.qrc
+/home/daniel/QtProjects/QuickApp/Main.qml
+/home/daniel/QtProjects/QuickApp/Second.qml
+--json
+/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug/appQuickApp_qmllint.json

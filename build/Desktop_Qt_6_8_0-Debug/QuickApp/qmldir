@@ -1,0 +1,8 @@
+module QuickApp
+typeinfo appQuickApp.qmltypes
+prefer :/qt/qml/QuickApp/
+Main 1.0 Main.qml
+PageOne 1.0 PageOne.qml
+PageTwo 1.0 PageTwo.qml
+PageThree 1.0 PageThree.qml
+

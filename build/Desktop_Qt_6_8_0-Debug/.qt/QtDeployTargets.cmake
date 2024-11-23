@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appQuickApp_FILE /home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_8_0-Debug/appQuickApp)
+set(__QT_DEPLOY_TARGET_appQuickApp_TYPE EXECUTABLE)

@@ -1,0 +1,14 @@
+-rootPath
+/home/daniel/QtProjects/QuickApp
+-cmake-output
+-output-file
+/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appQuickApp.cmake
+-importPath
+/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug/QuickApp
+-importPath
+/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug
+-importPath
+/home/daniel/Qt/6.6.3/gcc_64/./qml
+-qrcFiles
+/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug/.rcc/qmake_QuickApp.qrc
+/home/daniel/QtProjects/QuickApp/build/Desktop_Qt_6_6_3_GCC_64bit-Debug/.rcc/appQuickApp_raw_qml_0.qrc

@@ -1,0 +1,19 @@
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+
+
+Rectangle {
+    width: 200
+    height: 200
+    
+    ColumnLayout {
+        anchors.fill: parent
+        spacing: 20
+        
+        Text {
+            id: text_one
+            text
+        }
+    }
+}

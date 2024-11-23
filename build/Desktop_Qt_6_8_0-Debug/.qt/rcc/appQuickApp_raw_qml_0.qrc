@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt/qml/QuickApp/">
+    <file alias="Main.qml">/home/daniel/QtProjects/QuickApp/Main.qml</file>
+    <file alias="PageOne.qml">/home/daniel/QtProjects/QuickApp/PageOne.qml</file>
+    <file alias="PageTwo.qml">/home/daniel/QtProjects/QuickApp/PageTwo.qml</file>
+    <file alias="PageThree.qml">/home/daniel/QtProjects/QuickApp/PageThree.qml</file>
+  </qresource>
+</RCC>
+
